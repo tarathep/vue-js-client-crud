@@ -27,7 +27,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Init Project
 ```
-vue create vue=js-client-crud
+vue create vue-js-client-crud
 ```
 - select vue2 default (babel,eslint)
 - other vue2 or vueX
