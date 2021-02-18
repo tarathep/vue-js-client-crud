@@ -1,4 +1,7 @@
 # vue-js-client-crud
+frontend crud tutorial for connect with [apis backend](https://github.com/tarathep/go-server-crud)
+
+<img src="https://vuejs.org/images/logo.png" width="10%">
 
 ## Project setup
 ```
