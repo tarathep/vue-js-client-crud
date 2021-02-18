@@ -66,6 +66,7 @@ export default {
   },
   methods: {
     getTutorial(id) {
+      //call func get by id
       TutorialDataService.get(id)
         .then(response => {
           this.currentTutorial = response.data;
@@ -109,15 +110,18 @@ export default {
       TutorialDataService.delete(this.currentTutorial.id)
         .then(response => {
           console.log(response.data);
-          this.$router.push({ name: "tutorials" });
+          //this.$router.push({ name: "tutorials-list" });
+          this.$router.push('/tutorials')
         })
         .catch(e => {
+          console.log("err")
           console.log(e);
         });
     }
   },
   mounted() {
     this.message = '';
+    //GET id FROM TutorialsList Page to URL/{ID}
     this.getTutorial(this.$route.params.id);
   }
 };
