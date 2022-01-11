@@ -21,25 +21,25 @@
       </div>
     </form>
 
-    <button class="badge badge-primary mr-2"
+    <button class="m-3 btn btn-sm btn-info"
       v-if="currentTutorial.published"
       @click="updatePublished(false)"
     >
       UnPublish
     </button>
-    <button v-else class="badge badge-primary mr-2"
+    <button v-else class="m-3 btn btn-sm btn-info"
       @click="updatePublished(true)"
     >
       Publish
     </button>
 
-    <button class="badge badge-danger mr-2"
+    <button class="m-3 btn btn-sm btn-danger"
       @click="deleteTutorial"
     >
       Delete
     </button>
 
-    <button type="submit" class="badge badge-success"
+    <button type="submit" class="m-3 btn btn-sm btn-warning"
       @click="updateTutorial"
     >
       Update

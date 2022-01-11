@@ -24,12 +24,12 @@
         />
       </div>
 
-      <button @click="saveTutorial" class="btn btn-success">Submit</button>
+      <button @click="saveTutorial" id="btn" class="btn btn-success">Submit</button>
     </div>
 
     <div v-else>
       <h4>You submitted successfully!</h4>
-      <button class="btn btn-success" @click="newTutorial">Add</button>
+      <button id="btn" class="btn btn-success" @click="newTutorial">Add</button>
     </div>
   </div>
 </template>
@@ -73,7 +73,10 @@ export default {
 </script>
 <style>
 .submit-form {
-  max-width: 300px;
+  max-width: 200px;
   margin: auto;
+}
+#btn {
+  margin-top: 20px;
 }
 </style>
